@@ -20,10 +20,6 @@ String postfixFormula = "12+3+";
 Node root = ExpressionTree.buildTree(postfixFormula);
 ExpressionTree.printTree(root);
 ```
-
-### Example 1: Simple Postfix Expression
-Postfix formula: `12+3+`
-
 #### Output:
 ```
    +
@@ -39,10 +35,6 @@ String postfixFormula = "12+3+578/-*";
 Node root = ExpressionTree.buildTree(postfixFormula);
 ExpressionTree.printTree(root);
 ```
-
-### Example 2: Complex Postfix Expression
-Postfix formula: `12+3+578/-*`
-
 #### Output:
 ```
      *
