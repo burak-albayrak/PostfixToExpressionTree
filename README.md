@@ -21,9 +21,35 @@ Node root = ExpressionTree.buildTree(postfixFormula);
 ExpressionTree.printTree(root);
 ```
 
+### Example 1: Simple Postfix Expression
+Postfix formula: `12+3+`
+
+#### Output:
+```
+   +
+  / \
+ 1   +
+    / \
+   2   3
+```
+
 ### Example 2: Complex Postfix Expression
 ```java
 String postfixFormula = "12+3+578/-*";
 Node root = ExpressionTree.buildTree(postfixFormula);
 ExpressionTree.printTree(root);
+```
+
+### Example 2: Complex Postfix Expression
+Postfix formula: `12+3+578/-*`
+
+#### Output:
+```
+     *
+    / \
+   +   /
+  / \  / \
+ 1   + 5   /
+    / \   / \
+   2   3  7   8
 ```
